@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, StyleSheet, Button, View } from "react-native";
 
-const HomeScreen = ({ navigation }) => {
+export const HomeScreen = ({ navigation }) => {
   return (
     <View>
       <Text style={styles.text}>HomeScreen</Text>
@@ -13,6 +13,14 @@ const HomeScreen = ({ navigation }) => {
         title={"Components Screen"}
         onPress={() => navigation.navigate("Components")}
       />
+      <Button
+        title={"Components Screen"}
+        onPress={() => navigation.navigate("Components")}
+      />
+      <Button
+        title={"Images Screen"}
+        onPress={() => navigation.navigate("Images")}
+      />
     </View>
   );
 };
@@ -22,5 +30,3 @@ const styles = StyleSheet.create({
     fontSize: 30,
   },
 });
-
-export default HomeScreen;

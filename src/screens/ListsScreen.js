@@ -1,7 +1,7 @@
 import React from "react";
 import { FlatList, Text } from "react-native";
 
-const ListsScreen = () => {
+export const ListsScreen = () => {
   return (
     <FlatList
       data={[{ name: "Mohammad" }, { name: "Yazan" }, { name: "Malek" }]}
@@ -10,5 +10,3 @@ const ListsScreen = () => {
     />
   );
 };
-
-export default ListsScreen;
